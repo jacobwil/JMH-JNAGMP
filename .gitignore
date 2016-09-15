@@ -1,0 +1,17 @@
+# Maven ignores
+/target/
+
+# IDE ignores
+/.settings/
+/.project
+/.classpath
+
+# Project runtime ignores
+/logs/
+.idea/
+*.class
+*.iml
+*.swp
+*.jar
+*.log
+.DS_Store
