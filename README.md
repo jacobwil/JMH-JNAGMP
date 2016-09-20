@@ -1,6 +1,6 @@
 ## What is it?
 
-This repository is my effort to benchmark my [pirkAddtiions](https://github.com/jacobwil/jna-gmp/tree/pirkAdditions) 
+This repository is my effort to benchmark my [pirkAdditions](https://github.com/jacobwil/jna-gmp/tree/pirkAdditions) 
 branch of [Square's JNA-GMP](https://github.com/square/jna-gmp) as part of my [pull request]
 (https://github.com/square/jna-gmp/pull/17). 
 
