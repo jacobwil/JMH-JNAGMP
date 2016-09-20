@@ -24,10 +24,10 @@ public class ModularMultiplyBenchmarkParamSpace
 
   @State(Scope.Benchmark) public static class ModularMultiplyBenchmarkParamSpaceState
   {
-    @Param({"1024", "2048", "3074", "4096", "8192"})
+    @Param({"1024", "2048", "3074", "4096", "8192", "16384", "32768"})
     int MODULUS_SIZE;
 
-    @Param({"1024", "2048", "3074", "4096", "8192"})
+    @Param({"1024", "2048", "3074", "4096", "8192", "16384"})
     int FACTOR_SIZE;
 
     BigInteger factor1 = null;
@@ -45,8 +45,7 @@ public class ModularMultiplyBenchmarkParamSpace
         // Create a new large numbers with the second highest bit definitely set
         factor1 = getRandomBigIntegerWithBitSet(FACTOR_SIZE, FACTOR_SIZE - 2);
         factor2 = getRandomBigIntegerWithBitSet(FACTOR_SIZE, FACTOR_SIZE - 2);
-        smallerModulus = getRandomBigIntegerWithBitSet(MODULUS_SIZE, MODULUS_SIZE - 2);
-        modulus = smallerModulus.pow(2);
+        modulus = getRandomBigIntegerWithBitSet(MODULUS_SIZE, MODULUS_SIZE - 2);
       } catch (Exception e)
       {
         System.out.printf("Error!\n");
